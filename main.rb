@@ -3,18 +3,15 @@
 system('clear')
 puts ""
 puts ""
-puts "                                                                         ALPHABET for KIDS"
+puts "ALPHABET for KIDS"
 puts ""
 puts ""
 puts ""
-puts "                                                                      Press any letter to begin."
+puts "Press any letter to begin."
 
-objects_hash = {'A' }
-
-
-#this prints the letter pressed and the animal
-def is_for(input) 
-    animals_hash = {
+#This hash is nested and holds both alphabet categories 
+def is_for(key) 
+    words_hash = {
         'A' => {animal: 'Ant', object: 'Apple'}, 
         'B' => {animal: 'Bird', object: 'Bus'}, 
         'C' => {animal: 'Cat', object: 'Castle'},
@@ -42,52 +39,32 @@ def is_for(input)
         'Y' => {animal: 'Yak', object: 'Yoyo'}, 
         'Z' => {animal: 'Zebra', object: 'Zip'}
     }
-    
-    animals_hash.each do |key, value|
-        if value.is_a?(Array)
-            puts "#{key} is for #{value[:animal]}"
-        elsif
-            puts "#{key} is for #{value]"
-        end
-    end
 
-#     value = animals_hash[input]
-#     unless animals_hash.key?(input)
-#         puts "no match"  
-#     else
-#         puts "{input} is for {value}."
-#     end 
-# end
-# input = gets.chomp.upcase
-# is_for(input)
+    #Temp variable for generating random number to choose either category
+    temp_cat = rand(1..2)
+
+    if temp_cat == 2
+        words_hash 
+
+
+    unless words_hash.key?(key)
+        puts "no match"  
+    else
+        words_hash.each do |key, value|
+            if value.is_a?(Hash)
+                puts "#{key} is for #{value[:animal]}"
+            elsif
+                puts "#{key} is for #{value}"
+            end
+        end      
+    end 
 end
+ key = gets.chomp.upcase
+ is_for(key)
 
 
-B - Bus
-C - Castle
-D - Drums
-E - Earmuffs
-F - Flowers
-G - Guitar
-H - Helicopter
-I - Igloo
-J - Jeep
-K - Key
-L - Ladder
-M - Moon
-N - Nest
-O - Orange
-P - Planet (saturn)
-Q - Queen
-R - Ring
-S - Scissors
-T - Tree
-U - Umbrella
-V - Violin
-W - Watch
-X - X-ray
-Y - Yoyo
-Z - Zip
+
+
 
 
 
