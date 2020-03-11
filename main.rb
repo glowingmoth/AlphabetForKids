@@ -3,7 +3,7 @@ require 'colorize'
 require_relative 'modules'
 #This hash is nested and holds both alphabet categories 
 def is_for(letter) 
-    words_hash = {
+    $words_hash = {
         'A' => {animal: 'Ant', object: 'Apple'}, 
         'B' => {animal: 'Bird', object: 'Bus'}, 
         'C' => {animal: 'Cat', object: 'Castle'},
@@ -60,7 +60,7 @@ while true
         #Loop for Sight Words option
         while true 
             system('clear')
-            puts "Press a letter to begin! (or 3 to Exit)"
+            puts "Press a letter to begin! (or press 3 to Exit)"
             #Get key press without having to press enter key after
             begin
                 system('stty raw -echo') #This terminal/system command wil
@@ -80,7 +80,7 @@ while true
         #Loop for the Missing Letter option
         while true
             system('clear')
-            puts "Guess the missing letter! (or 3 to Exit"
+            puts "Guess the missing letter! (or press 3 to Exit)"
             begin
                 system('stty raw -echo') #This terminal/system command wil
                 key = STDIN.getc #Using I/O to get key press and convert to string
@@ -97,13 +97,14 @@ while true
         end
     when '3'
         system('clear')
-        puts "Thank you for playing ALPHABET for KIDS!"
+        puts "Thank you for using ALPHABET for KIDS!"
         puts ""
         puts ""
         sleep(3)
         exit
     end
 end
+
 
 
 

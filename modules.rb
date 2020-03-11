@@ -6,7 +6,7 @@ def title
   puts "ALPHABET for KIDS"
   puts ""
   puts ""
-  puts "Choose an option and press enter:\n1 = Sight Words\n2 = Missing Letter\n3 = Exit"
+  puts "Choose an option and press Enter:\n1 = Sight Words\n2 = Missing Letter\n3 = Exit"
 end
 
 # Apple
