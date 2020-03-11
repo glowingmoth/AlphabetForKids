@@ -6,21 +6,38 @@ require_relative 'modules'
 title
 
 #Get user choice for main menu
-options = gets.chomp
 
+
+#Main menu loop
 
 while true 
+    options = gets.chomp
     case options
     when '1'
-        puts "Sight Words"
+        system('clear')
+        puts "Press a letter to begin!"
+        #Get key press without having to press enter key after
+        begin
+            system('stty raw -echo') #This terminal/system command wil
+            key = STDIN.getc #Using I/O to get key press and convert to string
+            letter = key.upcase
+            #Method for grabbing letter pressed by user
+            is_for(letter)
+        ensure
+            system("stty -raw echo")
+        end  
     break
     when '2'
-        puts "Missing Letter"
+        system('clear')
+        puts "Guess the missing letter!"
     break
     when '3'
+        system('clear')
+        puts "Thank you for playing ALPHABET for KIDS!"
+        puts ""
+        puts ""
         exit
     end
-    #run_app = false
 end
 
 #This hash is nested and holds both alphabet categories 
@@ -66,23 +83,16 @@ def is_for(letter)
     unless words_hash.key?(letter)
         puts "no match"  
     else
-        puts apple 
-        puts "#{letter} is for #{words_hash[letter][category]}"  
+        puts  
+        puts "#{letter} is for #{words_hash[letter][category]}" 
+        sleep(4) 
     end 
 end
 
 
-#Get key press without having to press enter key after
-begin
-    system('stty raw -echo') #This terminal/system command wil
-    key = STDIN.getc #Using I/O to get key press and convert to string
-    letter = key.upcase
-ensure
-    system("stty -raw echo")
-end
 
-#Running method for grabbing letter pressed by user
-is_for(letter)
+
+
 
 
 
