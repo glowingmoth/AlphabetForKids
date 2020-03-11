@@ -40,18 +40,14 @@ def is_for(letter)
         category = :object 
     end
 
-
+    #This prints a message if any key pressed other than a letter or exit [3]
     unless words_hash.key?(letter)
-        puts ""  
+        puts "no match"  
     else
-        puts  
         puts "#{letter} is for #{words_hash[letter][category]}" 
         sleep(1) 
     end 
 end
-#Run the title screen method
-
-
 
 
 #Main menu loop
@@ -61,7 +57,7 @@ while true
     options = gets.chomp
     case options
     when '1'
-        #loop for sight words option
+        #Loop for Sight Words option
         while true 
             system('clear')
             puts "Press a letter to begin! (or 3 to Exit)"
@@ -81,6 +77,7 @@ while true
             end 
         end 
     when '2'
+        #Loop for the Missing Letter option
         while true
             system('clear')
             puts "Guess the missing letter! (or 3 to Exit"
