@@ -1,45 +1,6 @@
 #require 'tty-cursor'
 require 'colorize'
 require_relative 'modules'
-
-#Run the title screen
-title
-
-#Get user choice for main menu
-
-
-#Main menu loop
-
-while true 
-    options = gets.chomp
-    case options
-    when '1'
-        system('clear')
-        puts "Press a letter to begin!"
-        #Get key press without having to press enter key after
-        begin
-            system('stty raw -echo') #This terminal/system command wil
-            key = STDIN.getc #Using I/O to get key press and convert to string
-            letter = key.upcase
-            #Method for grabbing letter pressed by user
-            is_for(letter)
-        ensure
-            system("stty -raw echo")
-        end  
-    break
-    when '2'
-        system('clear')
-        puts "Guess the missing letter!"
-    break
-    when '3'
-        system('clear')
-        puts "Thank you for playing ALPHABET for KIDS!"
-        puts ""
-        puts ""
-        exit
-    end
-end
-
 #This hash is nested and holds both alphabet categories 
 def is_for(letter) 
     words_hash = {
@@ -88,6 +49,47 @@ def is_for(letter)
         sleep(4) 
     end 
 end
+#Run the title screen
+title
+
+#Get user choice for main menu
+
+
+#Main menu loop
+
+while true 
+    options = gets.chomp
+    case options
+    when '1'
+        system('clear')
+        puts "Press a letter to begin!"
+        #Get key press without having to press enter key after
+        begin
+            system('stty raw -echo') #This terminal/system command wil
+            key = STDIN.getc #Using I/O to get key press and convert to string
+            letter = key.upcase
+            #Method for grabbing letter pressed by user
+            is_for(letter)
+            sleep(4)
+        ensure
+            system("stty -raw echo")
+        end  
+    break
+    when '2'
+        system('clear')
+        puts "Guess the missing letter!"
+    break
+    when '3'
+        system('clear')
+        puts "Thank you for playing ALPHABET for KIDS!"
+        puts ""
+        puts ""
+        sleep(3)
+        exit
+    end
+end
+
+
 
 
 
