@@ -42,43 +42,48 @@ def is_for(letter)
 
 
     unless words_hash.key?(letter)
-        puts "no match"  
+        puts ""  
     else
         puts  
         puts "#{letter} is for #{words_hash[letter][category]}" 
-        sleep(4) 
+        sleep(1) 
     end 
 end
-#Run the title screen
-title
+#Run the title screen method
 
-#Get user choice for main menu
+
 
 
 #Main menu loop
-
-while true 
+while true
+    #Run the title screen method
+    title
     options = gets.chomp
     case options
     when '1'
-        system('clear')
-        puts "Press a letter to begin!"
-        #Get key press without having to press enter key after
-        begin
-            system('stty raw -echo') #This terminal/system command wil
-            key = STDIN.getc #Using I/O to get key press and convert to string
-            letter = key.upcase
-            #Method for grabbing letter pressed by user
-            is_for(letter)
-            sleep(4)
-        ensure
-            system("stty -raw echo")
-        end  
-    break
+        #loop for sight words option
+        while true 
+            system('clear')
+            puts "Press a letter to begin! (or 1 to exit)"
+            #Get key press without having to press enter key after
+            begin
+                system('stty raw -echo') #This terminal/system command wil
+                key = STDIN.getc #Using I/O to get key press and convert to string
+                if key == "1"
+                    break
+                end
+                letter = key.upcase
+                #Method for grabbing letter pressed by user
+                is_for(letter)
+                sleep(5)
+            ensure
+                system("stty -raw echo")
+            end 
+        end 
     when '2'
-        system('clear')
-        puts "Guess the missing letter!"
-    break
+            system('clear')
+            puts "Guess the missing letter!"
+        end
     when '3'
         system('clear')
         puts "Thank you for playing ALPHABET for KIDS!"
