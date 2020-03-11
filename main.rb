@@ -1,10 +1,11 @@
 #require 'tty-cursor'
-#require 'colorize'
+require 'colorize'
+require_relative 'modules'
+
 system('clear')
 puts ""
 puts ""
 puts "ALPHABET for KIDS"
-puts ""
 puts ""
 puts ""
 puts "Press any letter to begin."
@@ -51,18 +52,19 @@ def is_for(letter)
 
     unless words_hash.key?(letter)
         puts "no match"  
-    else
+    else 
+        puts apple
         puts "#{letter} is for #{words_hash[letter][category]}"  
     end 
 end
 
-# This is the OLD WAY to get input from the user
-#  key = gets.chomp.upcase
-#  is_for(key)
-system('stty raw -echo')
-key = STDIN.getc
+
+#Get key press without using enter key
+system('stty raw -echo') #This terminal/system command wil
+key = STDIN.getc #Using I/O to get key press and convert to string
 letter = key.upcase
- 
+
+#Running method for grabbing letter pressed by user
 is_for(letter)
 
 
