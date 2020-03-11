@@ -64,12 +64,12 @@ while true
         #loop for sight words option
         while true 
             system('clear')
-            puts "Press a letter to begin! (or 1 to exit)"
+            puts "Press a letter to begin! (or 3 to Exit)"
             #Get key press without having to press enter key after
             begin
                 system('stty raw -echo') #This terminal/system command wil
                 key = STDIN.getc #Using I/O to get key press and convert to string
-                if key == "1"
+                if key == "3"
                     break
                 end
                 letter = key.upcase
@@ -81,8 +81,22 @@ while true
             end 
         end 
     when '2'
+        while true
             system('clear')
-            puts "Guess the missing letter!"
+            puts "Guess the missing letter! (or 3 to Exit"
+            begin
+                system('stty raw -echo') #This terminal/system command wil
+                key = STDIN.getc #Using I/O to get key press and convert to string
+                if key == "3"
+                    break
+                end
+                letter = key.upcase
+                #Method for grabbing letter pressed by user
+                is_for(letter)
+                sleep(5)
+            ensure
+                system("stty -raw echo")
+            end 
         end
     when '3'
         system('clear')
