@@ -2,13 +2,26 @@
 require 'colorize'
 require_relative 'modules'
 
-system('clear')
-puts ""
-puts ""
-puts "ALPHABET for KIDS"
-puts ""
-puts ""
-puts "Press any letter to begin."
+#Run the title screen
+title
+
+#Get user choice for main menu
+options = gets.chomp
+
+
+while true 
+    case options
+    when '1'
+        puts "Sight Words"
+    break
+    when '2'
+        puts "Missing Letter"
+    break
+    when '3'
+        exit
+    end
+    #run_app = false
+end
 
 #This hash is nested and holds both alphabet categories 
 def is_for(letter) 
