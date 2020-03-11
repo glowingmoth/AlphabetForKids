@@ -52,20 +52,25 @@ def is_for(letter)
 
     unless words_hash.key?(letter)
         puts "no match"  
-    else 
-        puts apple
+    else
+        puts apple 
         puts "#{letter} is for #{words_hash[letter][category]}"  
     end 
 end
 
 
-#Get key press without using enter key
-system('stty raw -echo') #This terminal/system command wil
-key = STDIN.getc #Using I/O to get key press and convert to string
-letter = key.upcase
+#Get key press without having to press enter key after
+begin
+    system('stty raw -echo') #This terminal/system command wil
+    key = STDIN.getc #Using I/O to get key press and convert to string
+    letter = key.upcase
+ensure
+    system("stty -raw echo")
+end
 
 #Running method for grabbing letter pressed by user
 is_for(letter)
+
 
 
 
