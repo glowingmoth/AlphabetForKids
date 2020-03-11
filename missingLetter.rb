@@ -1,8 +1,3 @@
-puts "
-____ _    ___  _  _ ____ ___  ____ ___    ____ ____ ____   _  _ _ ___  ____ 
-|__| |    |__] |__| |__| |__] |___  |     |___ |  | |__/   |_/  | |  \\ [__  
-|  | |___ |    |  | |  | |__] |___  |     |    |__| |  \\   |\\_  | |__/ ___]"                                                                                                                                   
-  
 
 # This returns the Missing Letter word
 def missing(m_letter)
@@ -23,7 +18,7 @@ def missing(m_letter)
     arry_m_letter.delete_at(fn)
 
     # replace the deleted letter with an empty space
-    arry_m_letter.insert(fn," ")
+    arry_m_letter.insert(fn,"_")
 
     # convert back into a string
     m_letter = arry_m_letter.join("")

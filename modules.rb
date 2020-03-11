@@ -6,7 +6,7 @@ def title
   puts "
                       ____ _    ___  _  _ ____ ___  ____ ___    ____ ____ ____   _  _ _ ___  ____ 
                       |__| |    |__] |__| |__| |__] |___  |     |___ |  | |__/   |_/  | |  \\ [__  
-                      |  | |___ |    |  | |  | |__] |___  |     |    |__| |  \\   |\\_  | |__/ ___]"
+                      |  | |___ |    |  | |  | |__] |___  |     |    |__| |  \\   |\\_  | |__/ ___]".colorize(:cyan)
 
   puts ""
   puts ""
@@ -71,7 +71,40 @@ def bus
                                              ``.-----://++ooosssssooo+ooos:::/+ooooo+:-.`           
                                                           ``..-://+ooossssooo+/:-..`                
                                                                    ``..----..`"
-end                                                                                                                      
+end  
+
+# Rabbit
+def rabbit
+puts "                                                  
+                    .:/.                          
+                  `:/++-                          
+                 `::/+o-                          
+                 +::/++                           
+                .o:+++.                           
+              `-oso+-`                            
+         `-/o++syo+/.                             
+       `/soody/sssoo:`                            
+      -ohyyyhyyysss++.                            
+      /yyyysossso+ooo+-`                          
+      `::/+///+osyyhhyso+/:--....`                
+          ./+syhhhhhhhyyysssyyyyyso/-`            
+           .+yyyhhsssssssyyyyyssssyyys/.          
+            .syyyso+ossyyyyyhhhyssosyyyso:`       
+            `ossss++oyysssyyyyyyyssssyyyys+-      
+             /sooo++osysssossosossssysysysso/`    
+             .++++++osssoooooosoooooossssssso/`   
+              -///++osoo+o+ooooosooo+o+ooossoo/`  
+               -::+++//:///+++ooooooooooo++oo++.  
+                -+oo/.``..--/+++++oooooooo++++/`  
+                `osso.`````..:////+++++++oo+++:   
+                `oyyo.`   ```.-:::::::///+++//.   
+                .oss:/`   `--.:/--++++oo+/////`   
+               `:oo:+:`  `:+s/-:--:+ooo+///+/-    
+              -++o:      `-oo++++++/+oo/....`     
+                         `...-..---....`"
+                         return
+end
+puts rabbit
                                                                                                                         
                                                                                                                         
                                                                                                                         

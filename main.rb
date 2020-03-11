@@ -1,7 +1,7 @@
 #require 'tty-cursor'
 require 'colorize'
 require_relative 'modules'
-#This hash is nested and holds both alphabet categories 
+# Nested hash holding both alphabet categories 
 $words_hash = {
     'A' => {animal: 'Ant', object: 'Apple'}, 
     'B' => {animal: 'Bird', object: 'Bus'}, 
@@ -47,6 +47,7 @@ def is_for(letter)
     else
         puts ""
         puts ""
+        puts ""
         puts "                                                          #{letter} is for #{$words_hash[letter][category]}" 
         sleep(1) 
     end 
@@ -63,13 +64,33 @@ def missing(m_letter)
         category = :object 
     end
 
-    #This prints a message if any key pressed other than a letter or exit [3]
+    #This prints a message if any key pressed other than a letter or Exit [3]
     unless $words_hash.key?(m_letter)
         puts "no match"  
     else
-        puts "                                          #{m_letter} is for #{$words_hash[m_letter][category]}" 
-        sleep(1) 
-    end 
+        arry_m_letter = m_letter.split("")
+
+        # index range
+        num = arry_m_letter.count 
+        num -= 1
+
+        # the random index number for removing a letter
+        fn = rand(0..num)
+
+        # returns the letter at the random index and puts in m_l
+        m_l = arry_m_letter.at(fn)
+
+        # deletes the letter at the random index
+        arry_m_letter.delete_at(fn)
+
+        # replace the deleted letter with an empty space
+        arry_m_letter.insert(fn,"_")
+
+        # convert back into a string
+        m_letter = arry_m_letter.join("")
+        m_letter.capitalize
+    end   
+        sleep(1)  
 end
 
 
@@ -122,6 +143,7 @@ while true
                 system("stty -raw echo")
             end 
         end
+    # Exiting the App    
     when '3'
         system('clear')
         puts "                                               Thank you for using ALPHABET for KIDS!"
