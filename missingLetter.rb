@@ -1,46 +1,35 @@
-# Made a string 
-# string = 'thomas'
+puts "
+____ _    ___  _  _ ____ ___  ____ ___    ____ ____ ____   _  _ _ ___  ____ 
+|__| |    |__] |__| |__| |__] |___  |     |___ |  | |__/   |_/  | |  \\ [__  
+|  | |___ |    |  | |  | |__] |___  |     |    |__| |  \\   |\\_  | |__/ ___]"                                                                                                                                   
+  
 
-# # num is assigned the number of characters in the string
-# num = string.count string
-# num -= 1
-# # fn is assigned a random number in the range of the string count
-# fn = rand(0..num)
+# This returns the Missing Letter word
+def missing(m_letter)
+    # made into an array
+    arry_m_letter = m_letter.split("")
 
-# # This uses the random number from above to choose the index in the 
-# # string and replace with empty character
-# string.delete fn
-# string.insert(fn," ")
+    # index range
+    num = arry_m_letter.count 
+    num -= 1
 
-# puts 
+    # the random index number for removing a letter
+    fn = rand(0..num)
 
-while true
-# the string
-word = 'thomas'
+    # returns the letter at the random index and puts in m_l
+    m_l = arry_m_letter.at(fn)
 
-# made into an array
-array_word = word.split("")
+    # deletes the letter at the random index
+    arry_m_letter.delete_at(fn)
 
-# index range
-num = array_word.count 
-num -= 1
+    # replace the deleted letter with an empty space
+    arry_m_letter.insert(fn," ")
 
-# the random index number for removing a letter
-fn = rand(0..num)
-
-# returns the letter at the random index and puts in m_l
-m_l = array_word.at(fn)
-
-# deletes the letter at the random index
-array_word.delete_at(fn)
-
-# replace the deleted letter with an empty space
-array_word.insert(fn," ")
-
-# convert back into a string
-word = array_word.join("")
-
-puts word
-sleep (1)
+    # convert back into a string
+    m_letter = arry_m_letter.join("")
+    m_letter.capitalize
+    return(m_letter)
 end
+
+puts missing("Elephant")
 

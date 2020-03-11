@@ -3,10 +3,18 @@ def title
   system('clear')
   puts ""
   puts ""
-  puts "ALPHABET for KIDS"
+  puts "
+                      ____ _    ___  _  _ ____ ___  ____ ___    ____ ____ ____   _  _ _ ___  ____ 
+                      |__| |    |__] |__| |__| |__] |___  |     |___ |  | |__/   |_/  | |  \\ [__  
+                      |  | |___ |    |  | |  | |__] |___  |     |    |__| |  \\   |\\_  | |__/ ___]"
+
   puts ""
   puts ""
-  puts "Choose an option and press Enter:\n1 = Sight Words\n2 = Missing Letter\n3 = Exit"
+  puts "                                          Choose an option and press Enter:"
+  puts ""
+  puts "                                                   1 = Sight Words"
+  puts "                                                   2 = Missing Letter"
+  puts "                                                   3 = Exit"
 end
 
 # Apple

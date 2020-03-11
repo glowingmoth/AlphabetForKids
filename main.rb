@@ -45,7 +45,9 @@ def is_for(letter)
     unless $words_hash.key?(letter)
         puts "no match"  
     else
-        puts "#{letter} is for #{$words_hash[letter][category]}" 
+        puts ""
+        puts ""
+        puts "                                                          #{letter} is for #{$words_hash[letter][category]}" 
         sleep(1) 
     end 
 end
@@ -65,7 +67,7 @@ def missing(m_letter)
     unless $words_hash.key?(m_letter)
         puts "no match"  
     else
-        puts "#{m_letter} is for #{$words_hash[m_letter][category]}" 
+        puts "                                          #{m_letter} is for #{$words_hash[m_letter][category]}" 
         sleep(1) 
     end 
 end
@@ -81,7 +83,9 @@ while true
         #Loop for Sight Words option
         while true 
             system('clear')
-            puts "Press a letter to begin! (or Press 3 to Exit)"
+            puts ""
+            puts ""
+            puts "                                          Press a letter to begin! (or Press 3 to Exit)"
             #Get key press without having to press enter key after
             begin
                 system('stty raw -echo') #This terminal/system command wil
@@ -101,7 +105,9 @@ while true
         #Loop for the Missing Letter option
         while true
             system('clear')
-            puts "Guess the missing letter! (or Press 3 to Exit)"
+            puts ""
+            puts ""
+            puts "                                          Guess the missing letter! (or Press 3 to Exit)"
             begin
                 system('stty raw -echo') #This terminal/system command wil
                 key = STDIN.getc #Using I/O to get key press and convert to string
@@ -118,7 +124,7 @@ while true
         end
     when '3'
         system('clear')
-        puts "Thank you for using ALPHABET for KIDS!"
+        puts "                                               Thank you for using ALPHABET for KIDS!"
         puts ""
         puts ""
         sleep(1)
