@@ -10,7 +10,7 @@ puts ""
 puts "Press any letter to begin."
 
 #This hash is nested and holds both alphabet categories 
-def is_for(key) 
+def is_for(letter) 
     words_hash = {
         'A' => {animal: 'Ant', object: 'Apple'}, 
         'B' => {animal: 'Bird', object: 'Bus'}, 
@@ -41,26 +41,29 @@ def is_for(key)
     }
 
     #Temp variable for generating random number to choose either category
-    temp_cat = rand(1..2)
+    category = rand(1..2)
+    if category == 1
+        category = :animal
+    elsif category == 2
+        category = :object 
+    end
 
-    if temp_cat == 2
-        words_hash 
 
-
-    unless words_hash.key?(key)
+    unless words_hash.key?(letter)
         puts "no match"  
     else
-        words_hash.each do |key, value|
-            if value.is_a?(Hash)
-                puts "#{key} is for #{value[:animal]}"
-            elsif
-                puts "#{key} is for #{value}"
-            end
-        end      
+        puts "#{letter} is for #{words_hash[letter][category]}"  
     end 
 end
- key = gets.chomp.upcase
- is_for(key)
+
+# This is the OLD WAY to get input from the user
+#  key = gets.chomp.upcase
+#  is_for(key)
+system('stty raw -echo')
+key = STDIN.getc
+letter = key.upcase
+ 
+is_for(letter)
 
 
 
