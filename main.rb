@@ -137,7 +137,7 @@ while true
                 #Method for grabbing letter pressed by user
 
                 is_for(letter, image)
-                sleep(1)
+                sleep(3)
             ensure
                 system("stty -raw echo")
             end
@@ -153,7 +153,7 @@ while true
                 system('stty raw -echo') #This terminal/system command wil
                 first_key = STDIN.getc #Using I/O to get key press and convert to string
                 system('stty -raw echo') #This terminal/system command wil
-                if first_key == "3"
+                        if first_key == "3"
                     break
                 end
 
