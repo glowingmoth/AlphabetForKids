@@ -212,7 +212,7 @@ def cat
 end
 
 def castle
-  puts "                           ``              `                          
+  "                               ``              `                          
                                                                       
                                                 ``                    
                              `                  +/                    
@@ -242,7 +242,7 @@ def castle
 end
 
 def dog
-  puts "                                                                                
+  "                                                                                
                                                                -`               
                                                              `+h-/.             
                                                             :yydh+              
@@ -275,7 +275,7 @@ def dog
 end
 
 def drums
-  puts "       ``                `.`                                  
+  "              ``                `.`                                  
                .--.``             ..`                                 
                   `.:-.``...-------:-.---....```                      
              ``....--...--..`     ``...`  ``````......`               
@@ -299,7 +299,7 @@ def drums
 end
 
 def elephant
-  puts "                                                                      
+"                                                                      
                                                                       
                                                                       
                       `````                                           
@@ -555,14 +555,56 @@ def igloo
 end
 
 def jellyfish
-  puts ""
 end
 
 def jeep
-  puts ""
 end
 
-def 
+def kangaroo
+end
+
+def key
+end
+
+def lion
+end
+
+def ladder
+end
+
+def mouse
+end 
+
+def moon
+end
+
+def numbat
+end
+
+def nest
+end
+
+def octopus
+end
+
+def orange
+end
+
+def pig
+end
+
+def planet
+end
+
+def queen
+end
+
+def quail
+end
+
+
+
+
 def rabbit
   puts "                .:/."
   puts "              `:/++-"
@@ -592,8 +634,59 @@ def rabbit
   puts "                   `...-..---....`"
 end
 
+def ring 
+end
+
+def snake
+end
+
+def scissors
+end
+
+def turtle
+end
+
+def tree
+end
+
+def urchin
+end
+
+def umbrella
+end
+
+def vulture
+end
+
+def violin
+end
+
+def whale
+end
+
+def watch
+end
+
+def xerus
+end
+
+def xray
+end
+
+def yak
+end
+
+def yoyo
+end
+
+def zebra
+end
+
+def zip
+end
+
 def is_for(letter, image)
-  
+
 
   #Random number to choose either category
   category = rand(1..2)
@@ -615,9 +708,9 @@ def is_for(letter, image)
     puts ""
     puts "                                                          #{letter} is for #{$words_hash[letter][category]}"
 
-    puts image[letter][category]
+    #puts image[letter][category]
   end
-  return letter
+  return
 end
 
 
