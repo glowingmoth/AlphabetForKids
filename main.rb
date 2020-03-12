@@ -39,6 +39,7 @@ while true
     when '1'
         #Loop for Sight Words option
         while true
+            system('clear')
             puts ""
             puts ""
             puts "                                          Press a letter to begin! (or Press 3 to Exit)"

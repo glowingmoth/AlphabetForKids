@@ -39,6 +39,7 @@ def is_for(letter)
     puts ""
     puts ""
     puts "                                                          #{letter} is for #{$words_hash[letter][category]}"
+    puts apple
   end
   return letter
 end
@@ -80,10 +81,13 @@ def missing(letter)
 
       # convert back into a string
       new_word = arry_m_letter.join("").capitalize
+      sleep(2)
       puts ""
       puts ""
       puts ""
       puts "                                                          #{letter} is for #{new_word}"
+      
+
   end
       sleep(1)
 end
@@ -116,6 +120,7 @@ def apple
           ##%%&&&&&&&&%%&%%&&&%%#/,.
            .,,***///((((/*,...."
 end
+
 
 def ant
 puts "..`         `:`
@@ -427,6 +432,129 @@ def flowers
                              -/.              "
 end
 
+def goat
+  puts "                                                                                
+                                                                                
+                                                                                
+                              ````                                              
+                `.--//.    .//:-.```                                            
+                    `:+-  -o/`              ``````````                          
+                      //``//      ```````...............``                      
+                 `..``.-----`.--.....................---.......``               
+                 `/+++:----:+oo/-----.--..............----.--..`                
+                     .::---::------------.--.........-------`                   
+                      .-------------------------....-------`                    
+                      `-++:::------------------------------                     
+                       `//:/:::::------------------::-----`                     
+                        `.`-:::::::::-----:::::::::::/+---`                     
+                            -::::::::---::::::::::::/+y:--`                     
+                            `.:::::::-----::::::-.://:+/--                      
+                              .::.``:::.     `    .-.` --.                      
+                              `:-`  .::.           -.. .:-                      
+                              `:-   .::`           --` .-.                      
+                              `:-   ./:            --  .-`                      
+                               :-    ::           `--  .-                       
+                               --    .:`          .--  -.                       
+                              `:-`   ./-         .::. -:.                       
+                             `//-    :/:`        :/- ./:`                       
+                             .::    ://:             --."
+end
+
+def guitar
+  puts "                                                                                
+                                                                                
+       `.://++//:-.`                                                            
+     `/ooooooooooooo+/-.`                                                       
+    .ooooooooooooooooooo+/::--:://///:-`                                        
+   `ooooooooooooooooooooooooooooooooooo+-                                       
+   /oooooooooooooshhooooooooooooooooooooo`                                      
+   oooooooooooooohmmsooooossyyyysssoooooo-                           `- -`-`    
+  `ooooooooooooosdhhsoooosshdmmmddyyyyyyyo++////////:/:::::::------.:os+yoyos+  
+  `soooooooooooosdyysooossyNNNNNNNhdhhhhhhhdhhdhhhhhhhyhyhyhyyyhhyhosysyyyhyys  
+  `sooooooooooooodhysoooossdmNNNmhsssoooo/----------...............`-/o/s+s+++  
+   ooooooooooooooyddooooooosyyyyssooooooo-                            . . .`    
+   /oooooooooooooossooooooooooooooooooooo`                                      
+   `ooooooooooooooooooooooooooooooooooo/.                                       
+    .+ooooooooooooooooo+/:-....--::::-`                                         
+      -/ooooooooooo+:-`                                                         
+        `.-:::--.`"
+end
+
+def horse
+  puts "                                        -/-    
+                                       -+s/++osssN:    
+                                   -+yNNNdo++ososys:   
+                              ../yNNNNNNhosysyyo+yyy/  
+    .:/ossso+/:.`        `-/yNNNNmdhssysssysydsssssoo/ 
+ `+hdhhyyyysssyyhyso///+oysssyhhyso++ooooss+..-+ohsooy/
+.dhyssssssssoossssssossssssssssssssso++oso.      .-yddy
+ssoooosssssooooooo+++++++++++oo+++ossssy/          `-. 
+dysysoooooooss+++++++++++++++//////+os+`               
+hmyhyo+ooosssooo+oo+++++++++++//////+s.                
+dMdyhyoossshhsysooooo+++++++so++++oooo                 
+hMNhyysss+`-``:oosssoooooo+oosssso+so.                 
+sNNMhso++        `-://+++/+++ssoo+/-                   
+yNNMmyso.                    sysss.                    
+yNNNNmy:                     mmhho                     
+hNNNNmo                     :NNmm-                     
+yNNNNN:                     :NNNm                      
+/dmNNN:                     sNoN/                      
+ :oNNNy                    `Nmom:                      
+  `mNNN-                   `hdsm+                      
+   -Nmmm:                   yNydm/                     
+   `//oss:`                 `.-/oo-` "
+end
+
+def helicopter
+  puts "                                                            
+                                                            
+                                                            
+ ```..................-:/ys::-..................```         
+                        oyy+                                
+                   .--::yhhs///:-`                          
+                .+ssyyyhhhhhhhhhyyo`                  `ooo+ 
+               `:-----------------::.`               -yhhh. 
+            ./o-......-/::::::/:----.----........../+hhhh+  
+         .+syh-````````:+sssss+:``````````.----..``/do:/+h. 
+       .shhdd:`````````:odddddh:-`````.:++/-.----::yd-:/.h+ 
+      -hdddh-``````````:/dddddd//``-/oo+/-.```   ``:hdyyhy: 
+      /ooo+-.----------/:+++++/.ooo+/+s:            `//-`   
+      .sysssssssssssssss:      `++oyh/                      
+        -/++/:::-------+.......-sdh/`                       
+           `-:s+///////////////y:.                          
+           -.......................-                        
+           .........................  "
+end
+
+def impala
+  puts "                                                       
+                                                       
+                                        .     ``       
+                                       :`     :        
+                                      --      +`       
+                                     ./`      -/       
+                                      :/-   `:/-       
+                                      :/o/:/o+:.       
+              ``-::--:--:-....```      `++so-``        
+             `/+////:/oooo++/////:-```./:/s:           
+             -+/o:/+/:/o++ooo+++++so+++///+`           
+             -://+://///--:/++/:/+so///++.`            
+             `:/:-/:::/:--:///://+so///-`              
+            `.-:- -/::------:::/++/.``                 
+          `.:-.` `//:` ``    /::-`                     
+          +:.`  `:/:`        -//-                      
+          :-    ://          .:/-                      
+         `:      :/          `/::                      
+         :.      `:.         `:.-                      
+        :y        -o`        .-`:                      
+        -+        `s:        -: :`                     
+         ..        `-/`       :---`                    
+                     `           `. "
+end
+
+def igloo
+  puts ""
+end
 def rabbit
   puts "                .:/."
   puts "              `:/++-"
@@ -455,5 +583,6 @@ def rabbit
   puts "              -++o:      `-oo++++++/+oo/....`"
   puts "                   `...-..---....`"
 end
+
 
 
