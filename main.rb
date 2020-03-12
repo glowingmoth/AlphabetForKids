@@ -74,7 +74,7 @@ image["M"][:object] = moon
 image["M"][:animal] = mouse
 image["N"] = {}
 image["N"][:object] = nest
-image["N"][:animal] = numbut
+image["N"][:animal] = numbat
 image["O"] = {}
 image["O"][:object] = orange
 image["O"][:animal] = octopus
@@ -129,11 +129,13 @@ while true
             begin
                 system('stty raw -echo') #This terminal/system command wil
                 key = STDIN.getc #Using I/O to get key press and convert to string
+                system("stty -raw echo")
                 if key == "3"
                     break
                 end
                 letter = key.upcase
                 #Method for grabbing letter pressed by user
+
                 is_for(letter, image)
                 sleep(1)
             ensure
@@ -150,6 +152,7 @@ while true
             begin
                 system('stty raw -echo') #This terminal/system command wil
                 first_key = STDIN.getc #Using I/O to get key press and convert to string
+                system('stty -raw echo') #This terminal/system command wil
                 if first_key == "3"
                     break
                 end
@@ -163,6 +166,7 @@ while true
                     begin
                         system('stty raw -echo') #This terminal/system command wil
                         answer_key = STDIN.getc #Using I/O to get key press and convert to string
+                        system('stty -raw echo') #This terminal/system command wil
                         if answer_key == $m_l
                             system('clear')
                             puts "                                                      Correct!"

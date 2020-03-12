@@ -707,11 +707,13 @@ def is_for(letter, image)
     puts ""
     puts ""
     puts "                                                          #{letter} is for #{$words_hash[letter][category]}"
-
-    #puts image[letter][category]
+    
+    puts image[letter][category]
   end
   return
 end
+
+
 
 
 
