@@ -18,31 +18,7 @@ def title
 end
 
 #This is for fetching the letter pressed and randomly choosing from either category
-def is_for(letter)
 
-  #Random number to choose either category
-  category = rand(1..2)
-  if category == 1
-      category = :animal
-  elsif category == 2
-      category = :object
-  end
-
-  #This prints a message if any key pressed other than a letter or exit [3]
-  unless $words_hash.key?(letter)
-      puts "no match"
-  else
-    # system("clear")
-    # sleep(1)
-    # rabbit
-    # sleep(2)
-    puts ""
-    puts ""
-    puts "                                                          #{letter} is for #{$words_hash[letter][category]}"
-    puts apple
-  end
-  return letter
-end
 
 
 #This fetches the key pressed and randomly removes a letter from the word
@@ -95,7 +71,7 @@ end
 
 
 def apple
-  puts "
+  "
 
                                 ,*/.
                        (&  .((((((((###%%%.
@@ -123,7 +99,7 @@ end
 
 
 def ant
-puts "..`         `:`
+"     ..`         `:`
          .-.        `+`
             ..       `+`
               ..      `+`
@@ -150,7 +126,7 @@ puts "..`         `:`
 end
 
 def bird
-  puts "                                      .-:::--.`
+"                                            .-:::--.`
                                          `-+sssssoooso+:`
                                        -+sssssssyhNNdhhhy+/:`
                                     `:sssooosyyysyyyhdo-`
@@ -172,7 +148,7 @@ def bird
 end
 
 def bus
-  puts "                                                                           
+  "                                                                                
                                                                            
                                                                            
                            ``.........``                                   
@@ -196,7 +172,7 @@ def bus
 end
 
 def cat
-  puts "                                                                                                    
+"                                                                                                    
                                                                                                     
                                                                                                     
                                 `-ooss/                                                             
@@ -614,6 +590,34 @@ def rabbit
   puts "               `:oo:+:`  `:+s/-:--:+ooo+///+/-"
   puts "              -++o:      `-oo++++++/+oo/....`"
   puts "                   `...-..---....`"
+end
+
+def is_for(letter, image)
+  
+
+  #Random number to choose either category
+  category = rand(1..2)
+  if category == 1
+      category = :animal
+  elsif category == 2
+      category = :object
+  end
+
+  #This prints a message if any key pressed other than a letter or exit [3]
+  unless $words_hash.key?(letter)
+      puts "no match"
+  else
+    # system("clear")
+    # sleep(1)
+    # rabbit
+    # sleep(2)
+    puts ""
+    puts ""
+    puts "                                                          #{letter} is for #{$words_hash[letter][category]}"
+
+    puts image[letter][category]
+  end
+  return letter
 end
 
 

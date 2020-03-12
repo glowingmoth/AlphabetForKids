@@ -31,6 +31,87 @@ $words_hash = {
     'Y' => {animal: 'Yak', object: 'Yoyo'},
     'Z' => {animal: 'Zebra', object: 'Zip'}
 }
+# Ascii art hash
+image = {}
+image["A"] = {}
+image["A"][:object] = apple
+image["A"][:animal] = ant
+image["B"]= {}
+image["B"][:object]= bus
+image["B"][:animal] = bird
+image["C"] = {}
+image["C"][:object] = castle
+image["C"][:animal] = cat
+image["D"] = {}
+image["D"][:object] = drums
+image["D"][:animal] = dog
+image["E"] = {}
+image["E"][:object] = earmuffs
+image["E"][:animal] = elephant
+image["F"] = {}
+image["F"][:object] = flowers
+image["F"][:animal] = fish
+image["G"] = {}
+image["G"][:object] = guitar
+image["G"][:animal] = goat
+image["H"] = {}
+image["H"][:object] = helicopter
+image["H"][:animal] = horse
+image["I"] = {}
+image["I"][:object] = igloo
+image["I"][:animal] = impala
+image["J"] = {}
+image["J"][:object] = jeep
+image["J"][:animal] = jellfish
+image["K"] = {}
+image["K"][:object] = key
+image["K"][:animal] = kangaroo
+image["L"] = {}
+image["L"][:object] = ladder
+image["L"][:animal] = lion
+image["M"] = {}
+image["M"][:object] = moon
+image["M"][:animal] = mouse
+image["N"] = {}
+image["N"][:object] = nest
+image["N"][:animal] = numbut
+image["O"] = {}
+image["O"][:object] = orange
+image["O"][:animal] = octopus
+image["P"] = {}
+image["P"][:object] = planet
+image["P"][:animal] = pig
+image["Q"] = {}
+image["Q"][:object] = queen
+image["Q"][:animal] = quail
+image["R"] = {}
+image["R"][:object] = ring
+image["R"][:animal] = rabbit
+image["S"] = {}
+image["S"][:object] = scissors
+image["S"][:animal] = snake
+image["T"] = {}
+image["T"][:object] = tree
+image["T"][:animal] = turtle
+image["U"] = {}
+image["U"][:object] = umbrella
+image["U"][:animal] = urchin
+image["V"] = {}
+image["V"][:object] = violin
+image["V"][:animal] = vulture
+image["W"] = {}
+image["W"][:object] = watch
+image["W"][:animal] = whale
+image["X"] = {}
+image["X"][:object] = x-ray
+image["X"][:animal] = xerus
+image["Y"] = {}
+image["Y"][:object] = yoyo
+image["Y"][:animal] = yak
+image["Z"] = {}
+image["Z"][:object] = zip
+image["Z"][:animal] = zebra
+
 #Main menu loop
 while true
     #Run the title screen method
@@ -53,7 +134,7 @@ while true
                 end
                 letter = key.upcase
                 #Method for grabbing letter pressed by user
-                is_for(letter)
+                is_for(letter, image)
                 sleep(1)
             ensure
                 system("stty -raw echo")
