@@ -1,6 +1,7 @@
-#require 'tty-cursor'
+require 'tty-cursor'
 require 'colorize'
 require_relative 'modules'
+
 # Nested hash holding both alphabet categories
 $words_hash = {
     'A' => {animal: 'Ant', object: 'Apple'},
