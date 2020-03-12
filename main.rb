@@ -30,77 +30,6 @@ $words_hash = {
     'Y' => {animal: 'Yak', object: 'Yoyo'}, 
     'Z' => {animal: 'Zebra', object: 'Zip'}
 }
-#This is for fetching the letter pressed and randomly choosing from either category
-def is_for(letter) 
-    
-    #Random number to choose either category
-    category = rand(1..2)
-    if category == 1
-        category = :animal
-    elsif category == 2
-        category = :object 
-    end
-
-    #This prints a message if any key pressed other than a letter or exit [3]
-    unless $words_hash.key?(letter)
-        puts "no match"  
-    else
-        puts ""
-        puts ""
-        puts ""
-        puts "                                                          #{letter} is for #{$words_hash[letter][category]}" 
-        sleep(1) 
-    end 
-end
-
-#This fetches the key pressed and randomly removes a letter from the word
-def missing(m_letter) 
-    
-    #Random number to choose either category
-    category = rand(1..2)
-    if category == 1
-        category = :animal
-    elsif category == 2
-        category = :object 
-    end
-
-    #This prints a message if any key pressed other than a letter or Exit [3]
-    unless $words_hash.key?(m_letter)
-        puts "no match"  
-    else
-        selected_word = $words_hash[m_letter][category]
-        arry_m_letter = selected_word.split("")
-        p arry_m_letter
-        
-        # index range
-        num = arry_m_letter.length
-        num -= 1
-
-        # the random index number for removing a letter
-        fn = rand(0..num)
-
-        # returns the letter at the random index and puts in m_l
-        m_l = arry_m_letter[fn]
-
-        # deletes the letter at the random index
-        arry_m_letter.delete_at(fn)
-
-        # replace the deleted letter with an empty space
-        arry_m_letter.insert(fn,"_")
-
-        # convert back into a string
-        m_letter = arry_m_letter.join("")
-        m_letter.capitalize
-        puts ""
-        puts ""
-        p m_letter
-        p $words_hash
-        p $words_hash[m_letter]
-        puts "                                                          #{m_letter} is for #{$words_hash[m_letter][category]}"
-    end   
-        sleep(1)  
-end
-
 
 #Main menu loop
 while true
@@ -143,9 +72,10 @@ while true
                 if key == "3"
                     break
                 end
-                m_letter = key.upcase
+                letter = key.upcase
                 #Method for grabbing letter pressed by user
-                missing(m_letter)
+                #is_for(letter)
+                missing(letter)
                 sleep(1)
             ensure
                 system("stty -raw echo")
