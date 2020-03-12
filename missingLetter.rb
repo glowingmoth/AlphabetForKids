@@ -6,7 +6,7 @@ def missing(m_letter)
     arry_m_letter = m_letter.split("")
 
     # index range
-    num = arry_m_letter.count 
+    num = arry_m_letter.count
     num -= 1
 
     # the random index number for removing a letter
