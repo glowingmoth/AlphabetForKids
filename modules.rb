@@ -12,9 +12,9 @@ def title
   puts ""
   puts "                                          Choose an option and press Enter:"
   puts ""
-  puts "                                                   1 = Sight Words"
-  puts "                                                   2 = Missing Letter"
-  puts "                                                   3 = Exit"
+  puts "                                                   1 = Sight Words".colorize(:light_blue)
+  puts "                                                   2 = Missing Letter".colorize(:light_red)
+  puts "                                                   3 = Exit".colorize(:green)
 end
 
 
@@ -25,9 +25,9 @@ def missing(letter, image)
   #Random number to choose either category
   category = rand(1..2)
   if category == 1
-      category = :animal
+    category = :animal
   elsif category == 2
-      category = :object
+    category = :object
   end
 
   #This prints a message if any key pressed other than a letter or Exit [3]
@@ -65,7 +65,7 @@ def missing(letter, image)
       
 
   end
-      sleep(1)
+      #sleep(1)
 end
 
 #This fetches the key pressed and randomly removes a letter from the word
@@ -837,42 +837,42 @@ def nest
 end
 
 def octopus
-                              "                                                  
-                                                                              
-                                                                              
-                                              .+oo/-`                         
-                                            /hddhyss/`                       
-                                            -yhdhhyyyyo`                      
-                                            :hdhhhyyyss:                      
-                                          `-shhhhhysys/   ..                 
-                                        `/--/oyhhdhyss+`  `-/`               
-                                        -+  `:-+yhdhyys.    o.               
-                                        `/+:-+-.-oyhhhyy. .//`               
-                                          `+yyoyooshdyyso:o+-`                
-                                          +ys:/.-ooyyyso//:`                 
-                                      ``.`-ss+:-:oossso+/:-::.```            
-                                    `-/soooo+++osyyssssos+:-/o++++++:-`       
-                                  `/os+.``-/+/-:syysyyo+++o/:`````.-//:`     
-                                  -oso`     `-/sssyyyys:+sooo-       `-/.    
-                                  `/os+:-..-/+oso/:yhso/ss+/oo:        ./`   
-                                    `-+ooooooo++/.``ss+/`sy+./os/`       ./   
-                                      `.----.``   `ss+/ /hs- -+o/`       /   
-                                                  `soo/ .ys/` ./o+`      :   
-                                      `-////-`     `soo- `yy/`  `:++:`    :   
-                                    `+s/.../:     -so+. -yy+`    ./++/.  .-..
-                                    `os:         `oso/ .syo-       `-/+/-````
-                                      -os/.`     .+soo-:ss+:` `.--.     .+:`  
-                                      .+sso////+sssoosoo//o/`:``-.--````+/`  
-                                        .:+ooooo++osss/.  /+:```   .-///:`   
-                                            `..`.`:sy+-   `/+-                
-                                                `oso/   `:o+.                
-                                                `+o+/-.:+o/-                 
-                                                  .++//sso/.                  
-                                                  .:://:-` "
+        "
+                                                      .+oo/-`                         
+                                                    /hddhyss/`                       
+                                                    -yhdhhyyyyo`                      
+                                                    :hdhhhyyyss:                      
+                                                  `-shhhhhysys/   ..                 
+                                                `/--/oyhhdhyss+`  `-/`               
+                                                -+  `:-+yhdhyys.    o.               
+                                                `/+:-+-.-oyhhhyy. .//`               
+                                                  `+yyoyooshdyyso:o+-`                
+                                                  +ys:/.-ooyyyso//:`                 
+                                              ``.`-ss+:-:oossso+/:-::.```            
+                                            `-/soooo+++osyyssssos+:-/o++++++:-`       
+                                          `/os+.``-/+/-:syysyyo+++o/:`````.-//:`     
+                                          -oso`     `-/sssyyyys:+sooo-       `-/.    
+                                          `/os+:-..-/+oso/:yhso/ss+/oo:        ./`   
+                                            `-+ooooooo++/.``ss+/`sy+./os/`       ./   
+                                              `.----.``   `ss+/ /hs- -+o/`       /   
+                                                          `soo/ .ys/` ./o+`      :   
+                                              `-////-`     `soo- `yy/`  `:++:`    :   
+                                            `+s/.../:     -so+. -yy+`    ./++/.  .-..
+                                            `os:         `oso/ .syo-       `-/+/-````
+                                              -os/.`     .+soo-:ss+:` `.--.     .+:`  
+                                              .+sso////+sssoosoo//o/`:``-.--````+/`  
+                                                .:+ooooo++osss/.  /+:```   .-///:`   
+                                                    `..`.`:sy+-   `/+-                
+                                                        `oso/   `:o+.                
+                                                        `+o+/-.:+o/-                 
+                                                          .++//sso/.                  
+                                                          .:://:-` "
 end
 
 def orange
-  "                                          ``.-::::::::-.`                  
+  " 
+  
+                                            ``.-::::::::-.`                  
                                           `-://////+o+//+///:.                
                                         .://///////////////////-`             
                                       `-/////////////////////+++/.            
@@ -1045,7 +1045,7 @@ def rabbit
 end
 
 def ring 
-                                  "                                                 
+  "                                                 
                                                                                   
                                                                                   
                                                                                   
@@ -1073,7 +1073,7 @@ def ring
 end
 
 def snake
-                              ":                                                            
+  "                              :                                                            
                                 /+       ``              `.--.`                              
                                 -o+//+sysshs-        -ohddddddhs:`                          
                                   `...`   `yd-     `ymmmmmdddddmdh/                         
@@ -1102,7 +1102,7 @@ def snake
 end
 
 def scissors
-                        "                                                 .-/++/:-`                    
+  "                                                                     .-/++/:-`                    
                         ``                                            -oss+/://os:                   
                         `.----.``                                    /so-`     `sy-                  
                             `.--:::--.``                            /so`     `-oyo`                  
@@ -1263,8 +1263,8 @@ def vulture
 end
 
 def violin
-                                  "                                       
-                                                                .--   ` 
+  "                                       
+                                                                .-- ` 
                                                               `hmh-    
                                                           .-::/my.`    
                                                           so:+oo:oh-   
@@ -1280,7 +1280,7 @@ def violin
                                             :syyysshhddysssso/         
                                             `/yyyyhhhdyssssso`         
                                             .oyysyyhdhyyyys/`          
-                                        ..`.:shyysssyyyhyss:          ` 
+                                        ..`.:shyysssyyyhyss:` 
                                       `.sssoshyoosssshys.`.`            
                                     .+yyshyhyyyysssyyy.                
                                     :yyyyyyyyyyyyyyydys                 

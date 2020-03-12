@@ -124,7 +124,7 @@ while true
             system('clear')
             puts ""
             puts ""
-            puts "                                          Press a letter to begin! (or Press 3 to Exit)"
+            puts "(Press 3 to Exit)                                          Press a letter to begin! "
             #Get key press without having to press enter key after
             begin
                 system('stty raw -echo') #This terminal/system command wil
@@ -148,14 +148,14 @@ while true
             system('clear')
             puts ""
             puts ""
-            puts "                                          Guess the missing letter! (or Press 3 to Exit)"
+            puts "(Press 3 to Exit)                                    Guess the missing letter!"
             begin
                 system('stty raw -echo') #This terminal/system command wil
                 first_key = STDIN.getc #Using I/O to get key press and convert to string
                 system('stty -raw echo') #This terminal/system command wil
                 if first_key == "3"
-                break
-            end
+                    break
+                end
 
                 correct_letter_attempts = 0
                 while correct_letter_attempts <= 3
@@ -171,16 +171,16 @@ while true
                             system('clear')
                             puts ""
                             puts ""
-                            puts "                                                      Correct!"
+                            puts "                                                       Correct!".colorize(:light_blue)
                             sleep(1)
                             break
                         elsif answer_key != $m_l
                             system('clear')
                             puts ""
                             puts ""
-                            puts "                                                       Try Again"
-                            sleep(1)
-                            # break
+                            puts "                                                       Try Again".colorize(:light_red)
+                            sleep(0.5)
+                            break
                         elsif answer_key == '3'
                             break
                         end
@@ -198,7 +198,7 @@ while true
         system('clear')
         puts ""
         puts ""
-        puts "                                               Thank you for using ALPHABET for KIDS!"
+        puts "                                               Thank you for using ALPHABET for KIDS!".colorize(:cyan)
         puts ""
         puts ""
         sleep(1)
