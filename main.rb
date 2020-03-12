@@ -137,7 +137,7 @@ while true
                 #Method for grabbing letter pressed by user
 
                 is_for(letter, image)
-                sleep(3)
+                sleep(4)
             ensure
                 system("stty -raw echo")
             end
@@ -153,28 +153,32 @@ while true
                 system('stty raw -echo') #This terminal/system command wil
                 first_key = STDIN.getc #Using I/O to get key press and convert to string
                 system('stty -raw echo') #This terminal/system command wil
-                        if first_key == "3"
-                    break
-                end
+                if first_key == "3"
+                break
+            end
 
                 correct_letter_attempts = 0
                 while correct_letter_attempts <= 3
                     game_letter = first_key.upcase
                     #Method for grabbing letter pressed by user
                     #is_for(letter)
-                    missing(game_letter)
+                    missing(game_letter, image)
                     begin
                         system('stty raw -echo') #This terminal/system command wil
                         answer_key = STDIN.getc #Using I/O to get key press and convert to string
                         system('stty -raw echo') #This terminal/system command wil
                         if answer_key == $m_l
                             system('clear')
+                            puts ""
+                            puts ""
                             puts "                                                      Correct!"
                             sleep(1)
                             break
                         elsif answer_key != $m_l
                             system('clear')
-                            puts "                                                       Try again"
+                            puts ""
+                            puts ""
+                            puts "                                                       Try Again"
                             sleep(1)
                             # break
                         elsif answer_key == '3'
@@ -192,6 +196,8 @@ while true
     # Exiting the App
     when '3'
         system('clear')
+        puts ""
+        puts ""
         puts "                                               Thank you for using ALPHABET for KIDS!"
         puts ""
         puts ""
