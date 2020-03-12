@@ -89,7 +89,7 @@ def missing(letter)
 end
 
 
-# Apple
+
 def apple
   puts "
 
@@ -117,8 +117,316 @@ def apple
            .,,***///((((/*,...."
 end
 
+def ant
+puts "..`         `:`
+         .-.        `+`
+            ..       `+`
+              ..      `+`
+                .`     `/`
+                 `..     :`
+                   `-`  `+.
+                     `` :.
+                      .:+///-.`
+                    :oyys+::y+::.
+                 `-osyyhysssssoos.....`           `/-..
+               .ossosyyyssssoosyhso+/::::.        oo+y+:
+               --````-//::--..`/+/+o+//++/-``    /yyh/ +-
+                         `  `::::/oyy+os+/:+:`  `yydy--/s-`
+                           :- +osyhyo/oys+oy/:- /sdhhysoy+ss/-`
+                          -y `h-.+syhyssysdy//:`shhhdddhyh::://:.
+                         `y: +y`  ./oss:+dhysoo+hhydmmmmmms+o/:-/o`
+                         +o  y/      -` +hs/yhsoysyddhdmmmh+dys:-/+.
+                        `/. .o.     ``  /:``:+o+/.`oyysshddsymds/:/+.
+                       `-   +.     ``  `-          `/yssssso+hdhyo:o:
+                       -`   /`     .   -             `:shysoo++sys+/-
+                       -    /`    .`  ..                ./shy+oo+++:`
+                  `  `.    :- ````    -                    `--/++/.``
+                    `   ``..      ```.  "
+end
 
-# Rabbit
+def bird
+  puts "                                      .-:::--.`
+                                         `-+sssssoooso+:`
+                                       -+sssssssyhNNdhhhy+/:`
+                                    `:sssooosyyysyyyhdo-`
+                                 ./ooo++oooosssysyyss-
+                              `:osooooo++oooysyssyss`
+                           ./+ssyssssssssoooooosyyy:
+                        :ohhysssyhhhyyyssssoosysdds
+                     -sdhyhhddhhhhhdddhhhhyyyo+yho`
+                  `/hdhhhhhdhddhhhhmmdhdys+/++/::
+              `:oydddmmmmmmdddhhyssso/:.--:--:-`
+             +dyoshmmdhhysyhyso+/:---..--:/+/.
+          `-:++osso////::-:osssooooo+++/:-`
+       -///::-.              `.sy:/oo/-
+    -+o/-.`                     -//` `-///+-` ```-.
+  .yo-`                           .+/` ::-//+///-``.
+  .`                                `/+.
+                                    `-+yosoo+:/.
+                                  -::.   .:/:  .`     "
+end
+
+def bus
+  puts "                                                                           
+                                                                           
+                                                                           
+                           ``.........``                                   
+                       `:++:///://omNdho........`````                      
+                      -hmyh+///://oymdmd::--------...-........````         
+                   `  +ddhh+o+oooshmmmmmdh+yhys+oo+/+//::::::------.`      
+                  `/``/d///:o:+:++++ssooysomNmy+yhhomdhsdhoyyoysso+s`      
+                  `/  :d:::`+-/-://+os++y+odmms/os++d++/h+/++/sy/+/o.      
+         `        `:``/y/:/:+:+:/oosyyssso+dddhohhhohhyohyoyyoyssyos.      
+        `:`     ``.---------//+:--:::://:--:::+/:::-:::-::-------o+/.      
+         `    `////+///:-----::-----::/+/-----+:-----------------:::.      
+            `--oosossos/:::::-------::oso--::---------------:oso---::      
+            :/:oososssy/:::/+--...-/sysoo:-:----------------+ddm///+o      
+            +o+:::::::/::/+soo+--/hmmNNmo:-----------::/+osyhdho-..``      
+            :oso+++++++++oooooo:odhhhhdNh:--::/+osyhddddNNNmddy+-.``       
+            .-+/::::::/dydy+ooo+hhyos+hmd//ddmmmmmmmmmmmmmmdhyo/:-.``      
+              /hmddhys+ooo+/::-+hh+hhoydmmmmmmmmdddhyyso//:-..``           
+           ``.:+ydmmNmmmmmmmmdhddhyosshdmddhhyso+/:--.```                  
+           `.--//+osyhhdddmmmmmdddhhdhyo++/:-..```                         
+                ``..--::/++ooooooo+/:-."
+end
+
+def cat
+  puts "                                                                                                    
+                                                                                                    
+                                                                                                    
+                                `-ooss/                                                             
+                              `+yddds/.                                                             
+                             -hmdh:                                                                 
+                            +yyy/`                                                                  
+                           /hNN+                                                                    
+                          .sydy                                                                     
+                          +hdm/                                                                     
+                          +ydm:                                                                     
+                          shdm/                                                                     
+                          :syhs                                                                     
+                          .oyhd.                                                                    
+                           :syh+                                                                    
+                           .oydh`                          --.       `--.                           
+                           `+ydd/                          ://:`    ./:--                           
+                           `+hdNd:--////://+++/:--.`       -//oysosss/::.                           
+                           `ohmmdhdddddhdhhhhdhhdhddhyo/-.`:ooso/`-+oo+o-                           
+                           `+hhhhhhhhhhhhyhydhyhdyhyhhhdhs/oyoss/` /s++s-                           
+                           /yhhhhhyhyddyddhsdhsdyyhyhhdy/..-ss/-...``.:-`                           
+                          `shdhdhhyhhhhydhsyhyhhdyyhhydys:..--...-:```                              
+                          `sdddhdhdyhdhhyhyhyhyyhhyyyyddhs-.-.......`                               
+                           .ydddddhhhyhhydyyyhshyysysshmdy:-....`````                               
+                            :shddhhdhhhyyhyyyyyhsssyssydds-...`````                                 
+                            .:/ohhhooo+/+oyyyoyyso+:/:-yh:..``````                                  
+                           ``.-----.`````.:::::-:/-....//..``````                                   
+                          ````.----.`````             `....````                                     
+                         ``````.:o+:.```                .````                                       
+                        ````````.yys:``                 `.````                                      
+                        ..```    :oo-``                   ..```                                     
+                        `.```     -:.````                  ..```                                    
+                         .``` ` ````````````              ``..```                                   
+                         `-.`.`      ``.....`          ```  `.````                                  
+                                         ``            ``````..````                                 
+                                                          ```...``                                  
+                                                              ```"
+end
+
+def castle
+  puts "                           ``              `                          
+                                                                      
+                                                ``                    
+                             `                  +/                    
+                            .o-   --           :ss-                   
+                           `ooo. .oo.         .ssso`                  
+                           +ooso.osso`     `  +ssss+                  
+                          :sossssssss+     ``-ssssss-                 
+                          :/-::ossssss:     `osssssso`                
+                          `-`--ssssssss.    /ssssssss:                
+             /-           `...+oooooooo+   `sssssssooo.               
+            /ss-           ``--::-//-::`   `::/--/:-::`               
+           /osss.          .`.....--...     `....-...`                
+          :osssso.         .``.........      ./-...`.-                
+         -ososssso` `````.....-...............-....``/`    ``         
+        `+++oooooo- `.....-...............---......```                
+         `..------   .....-+-.....//.....:+--....-.```                
+          ``/-.---  `......:......::.....-/--....o:.`...`             
+         ```..--::-.-......+......:/.....-+-.......``...`             
+         :``..-----......../-.....::.....-/-.......```..              
+         ```..---:-..............-::--.....-.......`.-..              
+        ````...--:--........-..:oyyyys/-..--.......`.:..              
+        ````...---:-..........:shhhhhhs:..--.......```..`             
+        ````....---...........:shhhhhhs:-.-........`````              
+           ``````    .........:shhhhyhs/---.......`.```               
+                     `````````./++++++/-..........`````               
+                                             ````````"
+end
+
+def dog
+  puts "                                                                                
+                                                               -`               
+                                                             `+h-/.             
+                                                            :yydh+              
+                                                          `+hsohh`              
+                                                         .sddyyyho.             
+                                                      `:/oyhhhyyyhh-            
+                                                   `-/o+/syooo+yhddy.           
+                                                `-/ooo+++ysooshddddmdy/         
+                                         ..-://////++++/oho/odmsyyhmmmmh.       
+                    `-:/ooosssssssssssssss+syys/::://++ohy::/+ydoo+--::`        
+                 `-+ooooossssssssssssssss/:ssoo++/:/:/+yd+:`   .oyo+.           
+                :ooo+++ossyyyyyssssssssss::so+++++o/:/yys+.        .++          
+              `+sooo++ooossssssyysssssyss+/ooo++oo+++++y/            `          
+              +ooo+o+++oos+oooosssssssssso/+oo++++oo+:/+`                       
+             :h+o++o++++/://++ooooosssoo+o/oooo//++//:-.                        
+            .so:o+++++++/+/--://++++++++++/oooo///://:-                         
+           -oo--+++++++/::::   ``.--:://++oosso+::/++-                          
+          /y+- :o++++/::-.--           `.-/sooo:/++/:`                          
+       `:ss/.  so+++/:::-..                ooo+`-/::-                           
+    ./sys+-`  /so+/-/:---`                 :oo/ -:::.                           
+   +dy+:`    /s+/-`//:-.                   -++/ ./::`                           
+   o`      .oo+/`-+/-.`                    .o++``/:/`                           
+           os+/`/y+:-                      `ooo. :/+.                           
+           :o+. `++/`                       +oo` -++.                           
+           `o+`  `+/.                       :++. :++.                           
+            o+.   `/:`                       ++:` :o:                           
+            +++/-` `++::.                    :+o+:`+s++:.                       
+            .::::`  .----                    `-::-.`----`                       
+                                                           "
+end
+
+def drums
+  puts "       ``                `.`                                  
+               .--.``             ..`                                 
+                  `.:-.``...-------:-.---....```                      
+             ``....--...--..`     ``...`  ``````......`               
+         `.-.``      `````..--.``   ``..`            ``---`           
+        .:.               ```..---.` ``.-.`              `:-          
+        ::`                   ```.----.`---`             `-/-         
+        :+/-.``                    ``..-:---.        ````./:.         
+       ./+::----`````````               ` `.`````....````.`-.         
+       .://s++-..`.............-----------.......-::-../o+y+/         
+       `-/+y+s/s:-------------+:+::::::::::::----/:/:/+yyos/:         
+       `::o+:shhs:::://yhhhhhhh+hhhhhhhhhhhhhs///ys+-oyy//+:-`        
+        -/o:`+ydo:::://shhhhhhd-hhhhhhhhhhhhhs/:sdho.-y/:+++so.       
+        `+os/oyho:::://shhhhhy:./hhhhhhhhhhhhs///hs+.:s+/s+:o+`       
+        .so:`osds:::://shhhhhh/.:hhhhhhhhhhhhs/:sdds-:ohssoo`         
+         /oy/osy+:/osooyhhhhhhy.sdhhhhhhhhhhhs//+dy/.-ohys:-`         
+         :/+yoys/::...-/ohhhhy.`.yhhhhhhhhhhhs///s://syy/-:           
+          -/+++/+sssoo+oyhhhhhh-yhhhhhhhhhhhhsoooyysy:.`..`           
+            ...-```.-:/++oosyyhodhhhhhyyysoo+/:-..-/-```              
+                ```.-----..```/+o---::--------..--.`                  
+                       ``.....-`---------..``            "
+end
+
+def elephant
+  puts "                                                                      
+                                                                      
+                                                                      
+                      `````                                           
+              `://+////://:::/:/:---.``````..--:::--.`                
+             .o++sssossoo+soo+++//://+//:::::::::::::/:-.`            
+            ./+o+//oossoss++/+++++//++oo+++///////::::///:-.          
+            +++osso+osss+///::///+++/+ssso++++++++/+///++//:-         
+           :oossyhdhyyhs+///+++o+++ooyyysosso++++++//:::/+///.        
+          -sooooosydhyhso++++o+++++sysooossoooo+++//::::++////`       
+          sssooosyhyyhhyso++ooooooyssssosssoooo+++++++++++////-       
+         .yyyyo++-smy+syssoshhhyysoooyssssoooooooo+oooosoo+///.       
+        `:hyyo/   ``  :hdddddhyysoooshysssssssooosooooysso++/o        
+         `hhyy:       `mmmmmdyssoooohdyyyyyssssssssssso+++++-+        
+          shyy.       +ddmNNhsssssssddhyyyyhhyyyyyysysooo+o: :        
+          /hys`       yhhdmmdssssyyyhhhhhddddhhhyyyyyssooo/  .        
+          :hss`      .yyyhds/ysssh/./oyhhhdddhhhyyydmhysos`           
+          -hso       :yyyho `hyyso      `-:/++syyyysyhssy+            
+          -hy/       ohyyo   syys:                  osssh:            
+          .hy:      `yyys`   +hys:                 :sooyh/            
+           hy-      .dhy/    -hyy:               `:ssysyys`           
+           oh-       hhy/    .dhh/              :sosssyyys:           
+           .ho     `oyyyy/  :yyyyy:              ./+/:---.            
+            -h-    `-:-.`   `-::-`                                    
+             `        "
+end
+
+def earmuffs
+  puts "                                                                     
+                                                                      
+                                                                      
+                            `....`                                    
+                      .:+sydddhdhdhyo/:. `...`                        
+                  `:ohdmmNNNNNNNNNNNNNNddddddho-                      
+                `/hmmNNNNNNNNNNmmmdmdyysyysosyyhs-                    
+               /hmNNNNNNmdyso++///::-.`:+ydo..-:+so-                  
+              :dmNNNNmyo/::--........`/ddhdms-.---/y/`                
+             .hmNNNmy+:--...``````````ommdhhms..---+hs.               
+             sdNNNdo/:-..`````````````/NNNdhdmo-----+hh:.             
+             ydmmd+/:-..``````        `dNNmdhmm/-----:dmh.            
+             smmms/:--.``````        ``+mmNNddmd:-----+mh-            
+        ``   +NNd/::--:+oo+/:..`  `````.hmNNmdmNy------sdy`           
+        ``   :dm/.---/+syyyhdhhs+--`````-dmNNmmNN/----:-sy`           
+            `/ho`...----..-:/oyhddhyo:.``/mmNNNmNy---:-.-.`           
+            `yy: ```..-........-:+yhdmdy/-+mmmNNmm:----``             
+             o+`  ``..-..----------:/ohdmdssmmNNmN/:--.``             
+             -o+-` ```-----------------/odmdshmddd:--..``             
+              `:so/.``.------------------:ody.::::-...`               
+                `:oyo:.:::-----------------//`....```                 
+                   ./shs+/+::::-----:::----..``                       
+                     `:ohdmdho///:::::::---.`                         
+                        `shhdddhyyo/---...``                          
+                          `  .:+syo+``````   "
+end
+
+def fish
+  puts "                                                                      
+                                                                      
+                                                                      
+                             `+y.                                     
+                            .shhs`                                    
+                           :yhhhhyo-`                                 
+                    ``.--:+syyyyyyyyyysoo/:.                       .` 
+              `-/+osyyyhyyhyyyhhyyysssyyyyyhhs/.               .+ydd- 
+           ./shyyyyssyyyyyyhhhhhhhhhhhyyyssyyyhh+          `:sdNmmdh  
+        -+hdhysso+oo+oosssysyyyyhhhhdddddhhhyyyss-``   `-/ymNNmmddy.  
+     `+hddddhhyo++++o+ossossssyysyyyyyhhhddddddhhhyyyyyyyydmmdddds`   
+   .odhhhhhyssyys++++oosossossssyyssyyyyyhhhhhdddddddddddhhdddhh+     
+ :ydhhdyyyso++oos/++++++oo++o+ossosssssyyyyhhhhhhhdddddddyyhddhho.    
+-ysssoyyys+///:+s+++//++o//o+o++ooooooossyyyyyyyyyyyossyysyddddhhh+`  
+ `-/+://::--.--:////////+//++++++++o+ooosooooossyyys    `-+yddddhhys. 
+    -    ```.--/ysoo///+++++++++oo+:---...``:oyyyyys        `-+shhhys`
+                +sooo` ```.:yhyysss/          ./syyy             -/oo.
+                 :sss/      `:sssoos             .:-                  
+                  `:s/         -/ooo                                  
+                                  .`                                  
+                                    "
+end
+
+def flowers
+  puts "                                                            
+                                                            
+                            -.-/-:-`                        
+                     `.-::..////+/:::.                      
+                    -///::///oosos//::.--.                  
+                  `--:/:/++osssyysso++/::.``                
+           `..`.`.--:///+syyyyyyhhyssso+:--..`..``          
+         `-:///::::::::/shyyyyyyyhhysss+::--:://::``        
+        `:/++os++++/::::oyyyyhhyyyhhyys/::://o+o+//-        
+     `-:-:/ooyyyyyso/::::oyyyyyyyhhyyys+::/oyyyso+:--:.`    
+    .::://osyyyyhhy+/+:::/syyyhhyyyyo+//::/+yyyyso+//::-    
+    -:///+yyyyyyyyhhs+/////++osy++o+/:::/:syyyyyyyo///:-`   
+    -:///+yyyyhhyyhhs/////+/::+o/:://::-osyyyhyyyho///:-`   
+    ---:::+syyyyhhhys////++/::++/:::///:+yhhyyhyys/::--:.   
+    .-::::::/syyysyo//::/.-...o//..-:://+yyyyyy+/::::::-`   
+     ```:::-:///+:/++/:.`.    s:` `..-:/o//:+///:-::.```    
+        ```:////+///oo+:`    `s/`   `./+/://+////.`.        
+           :/:-:/:oyyyyyo`  `oso+`   .+:``-.+-::/-          
+            `` -+ossssyys/--:+++: `-:o:     .` .`           
+               -+ooosso/+////:/:-`-+ss`                     
+               /+++ooo+/+++ooy+-.--/++` `:++/`              
+              /yssss+///+oooos/. -/+///:oyyyyy-             
+             .ssssso/+/+oso/::/`.:sso+/+/osssso`            
+             /ooooso:-/+/+::--+.::/+++/:/osoooo:            
+             `++++:.      ``-///.`.`     ./+++/             
+              `..           ../-.          `.-`             
+                             -/.              "
+end
+
 def rabbit
   puts "                .:/."
   puts "              `:/++-"
