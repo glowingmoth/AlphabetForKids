@@ -1,5 +1,6 @@
 
 # This returns the Missing Letter word
+
 def missing(m_letter)
     # made into an array
     arry_m_letter = m_letter.split("")
@@ -24,7 +25,9 @@ def missing(m_letter)
     m_letter = arry_m_letter.join("")
     m_letter.capitalize
     return(m_letter)
-end
+
 
 puts missing("Elephant")
+sleep(0.5)
+end
 

@@ -68,17 +68,19 @@ def missing(m_letter)
     unless $words_hash.key?(m_letter)
         puts "no match"  
     else
-        arry_m_letter = m_letter.split("")
-
+        selected_word = $words_hash[m_letter][category]
+        arry_m_letter = selected_word.split("")
+        p arry_m_letter
+        
         # index range
-        num = arry_m_letter.count 
+        num = arry_m_letter.length
         num -= 1
 
         # the random index number for removing a letter
         fn = rand(0..num)
 
         # returns the letter at the random index and puts in m_l
-        m_l = arry_m_letter.at(fn)
+        m_l = arry_m_letter[fn]
 
         # deletes the letter at the random index
         arry_m_letter.delete_at(fn)
@@ -89,6 +91,12 @@ def missing(m_letter)
         # convert back into a string
         m_letter = arry_m_letter.join("")
         m_letter.capitalize
+        puts ""
+        puts ""
+        p m_letter
+        p $words_hash
+        p $words_hash[m_letter]
+        puts "                                                          #{m_letter} is for #{$words_hash[m_letter][category]}"
     end   
         sleep(1)  
 end

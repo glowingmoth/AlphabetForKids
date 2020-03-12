@@ -22,3 +22,5 @@ Being a father of two young children  I'm aware that early education is vital fo
 - **How to Interact** Dealing with an age (in the case of no parent to supervise) that is still learning to read, things need to be shown visually with images/pictures or intuitive. For this reason the child will essentially learn how to interact by pressing keys on the key board.
 - **Interaction** By pressing any letter on the key board the child can choose whatever letter they like and see a word and art relating to that letter.
 - **Errors** will be handled in a simplified way from the child's perspective. No print outs to the screen saying errors etc. The app will simply ignore any keys pressed that are not letters or numbers in the case of the main menu loop.
+
+### R10 - **Help Document**
