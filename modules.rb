@@ -32,10 +32,13 @@ def is_for(letter)
   unless $words_hash.key?(letter)
       puts "no match"
   else
-      puts ""
-      puts ""
-      puts "                                                          #{letter} is for #{$words_hash[letter][category]}"
-      sleep(1)
+    # system("clear")
+    # sleep(1)
+    # rabbit
+    # sleep(2)
+    puts ""
+    puts ""
+    puts "                                                          #{letter} is for #{$words_hash[letter][category]}"
   end
   return letter
 end
@@ -117,32 +120,32 @@ end
 
 # Rabbit
 def rabbit
-
-puts "                .:/."
-puts "              `:/++-"
-puts "             `::/+o-"
-puts "            +::/++"
-puts "            .o:+++."
-puts "            `-oso+-`"
-puts "         `-/o++syo+/."
-puts "       `/soody/sssoo:`"
-puts "      -ohyyyhyyysss++."
-puts "      /yyyysossso+ooo+-`"
-puts "      `::/+///+osyyhhyso+/:--...."
-puts "          ./+syhhhhhhhyyysssyyyyyso/-`"
-puts "           .+yyyhhsssssssyyyyyssssyyys/."
-puts "            .syyyso+ossyyyyyhhhyssosyyyso:`"
-puts "            `ossss++oyysssyyyyyyyssssyyyys+-"
-puts "             /sooo++osysssossosossssysysysso/`"
-puts "             .++++++osssoooooosoooooossssssso/`"
-puts "              -///++osoo+o+ooooosooo+o+ooossoo/`"
-puts "               -::+++//:///+++ooooooooooo++oo++."
-puts "                -+oo/.``..--/+++++oooooooo++++/`"
-puts "                `osso.`````..:////+++++++oo+++:"
-puts "                `oyyo.`   ```.-:::::::///+++//."
-puts "                .oss:/`   `--.:/--++++oo+/////`"
-puts "               `:oo:+:`  `:+s/-:--:+ooo+///+/-"
-puts "              -++o:      `-oo++++++/+oo/....`"
-puts "                   `...-..---....`"
+  puts "                .:/."
+  puts "              `:/++-"
+  puts "             `::/+o-"
+  puts "            +::/++"
+  puts "            .o:+++."
+  puts "            `-oso+-`"
+  puts "         `-/o++syo+/."
+  puts "       `/soody/sssoo:`"
+  puts "      -ohyyyhyyysss++."
+  puts "      /yyyysossso+ooo+-`"
+  puts "      `::/+///+osyyhhyso+/:--...."
+  puts "          ./+syhhhhhhhyyysssyyyyyso/-`"
+  puts "           .+yyyhhsssssssyyyyyssssyyys/."
+  puts "            .syyyso+ossyyyyyhhhyssosyyyso:`"
+  puts "            `ossss++oyysssyyyyyyyssssyyyys+-"
+  puts "             /sooo++osysssossosossssysysysso/`"
+  puts "             .++++++osssoooooosoooooossssssso/`"
+  puts "              -///++osoo+o+ooooosooo+o+ooossoo/`"
+  puts "               -::+++//:///+++ooooooooooo++oo++."
+  puts "                -+oo/.``..--/+++++oooooooo++++/`"
+  puts "                `osso.`````..:////+++++++oo+++:"
+  puts "                `oyyo.`   ```.-:::::::///+++//."
+  puts "                .oss:/`   `--.:/--++++oo+/////`"
+  puts "               `:oo:+:`  `:+s/-:--:+ooo+///+/-"
+  puts "              -++o:      `-oo++++++/+oo/....`"
+  puts "                   `...-..---....`"
 end
+
 

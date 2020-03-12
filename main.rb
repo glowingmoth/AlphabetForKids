@@ -30,7 +30,6 @@ $words_hash = {
     'Y' => {animal: 'Yak', object: 'Yoyo'},
     'Z' => {animal: 'Zebra', object: 'Zip'}
 }
-
 #Main menu loop
 while true
     #Run the title screen method
@@ -40,7 +39,6 @@ while true
     when '1'
         #Loop for Sight Words option
         while true
-            system('clear')
             puts ""
             puts ""
             puts "                                          Press a letter to begin! (or Press 3 to Exit)"
@@ -68,36 +66,37 @@ while true
             puts "                                          Guess the missing letter! (or Press 3 to Exit)"
             begin
                 system('stty raw -echo') #This terminal/system command wil
-                key = STDIN.getc #Using I/O to get key press and convert to string
-                if key == "3"
+                first_key = STDIN.getc #Using I/O to get key press and convert to string
+                if first_key == "3"
                     break
                 end
-                letter = key.upcase
-                #Method for grabbing letter pressed by user
-                #is_for(letter)
-                missing(letter)
+
                 correct_letter_attempts = 0
                 while correct_letter_attempts <= 3
+                    game_letter = first_key.upcase
+                    #Method for grabbing letter pressed by user
+                    #is_for(letter)
+                    missing(game_letter)
                     begin
                         system('stty raw -echo') #This terminal/system command wil
-                        key = STDIN.getc #Using I/O to get key press and convert to string
-                if key == $m_l
-                    system('clear')
-                    puts "                                                      Correct!"
-                    sleep(1)
-                    break
-                elsif key != $m_l
-                    system('clear')
-                    puts "                                                       Try again"
-                    sleep(1)
-                    break
-                elsif key == '3'
-                    break
-                end
-                    correct_letter_attempts =+ 1
-                ensure
-                    system("stty -raw echo")
-                end
+                        answer_key = STDIN.getc #Using I/O to get key press and convert to string
+                        if answer_key == $m_l
+                            system('clear')
+                            puts "                                                      Correct!"
+                            sleep(1)
+                            break
+                        elsif answer_key != $m_l
+                            system('clear')
+                            puts "                                                       Try again"
+                            sleep(1)
+                            # break
+                        elsif answer_key == '3'
+                            break
+                        end
+                        correct_letter_attempts += 1
+                    ensure
+                        system("stty -raw echo")
+                    end
                 end
             ensure
                 system("stty -raw echo")
