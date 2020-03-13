@@ -11,7 +11,7 @@ def title
                         ____ _    ___  _  _ ____ ___  ____ ___    ____ ____ ____   _  _ _ ___  ____
                         |__| |    |__] |__| |__| |__] |___  |     |___ |  | |__/   |_/  | |  \\ [__
                         |  | |___ |    |  | |  | |__] |___  |     |    |__| |  \\   |\\_  | |__/ ___]".colorize(:cyan)
-  
+
     puts ""
     puts ""
     puts "                                          Choose an option and press Enter:"
@@ -19,13 +19,13 @@ def title
     puts "                                                   1 = Sight Words".colorize(:light_blue)
     puts "                                                   2 = Missing Letter".colorize(:light_red)
     puts "                                                   3 = Exit".colorize(:green)
-  end
-  
-  
-  
+end
+
+
+
   #This is for fetching the letter pressed and randomly choosing from either category
   def missing(letter, image)
-  
+
     #Random number to choose either category
     category = rand(1..2)
     if category == 1
@@ -33,29 +33,29 @@ def title
     elsif category == 2
       category = :object
     end
-  
+
     #This prints a message if any key pressed other than a letter or Exit [3]
     unless $words_hash.key?(letter)
         puts "no match"
     else
         selected_word = $words_hash[letter][category]
         arry_m_letter = selected_word.split("")
-  
+
         num = arry_m_letter.length
         num -= 1
-  
+
         # the random index number for removing a letter
         fn = rand(0..num)
-  
+
         # returns the letter at the random index and puts in m_l
         $m_l = arry_m_letter[fn]
-  
+
         # deletes the letter at the random index
         arry_m_letter.delete_at(fn)
-  
+
         # replace the deleted letter with an empty space
         arry_m_letter.insert(fn,"_")
-  
+
         # convert back into a string
         new_word = arry_m_letter.join("").capitalize
         sleep(2)
@@ -66,16 +66,16 @@ def title
         puts ""
         puts ""
         puts image[letter][category]
-        
-  
+
+
     end
         #sleep(1)
   end
-  
+
   #This fetches the key pressed and randomly removes a letter from the word
   def is_for(letter, image)
-  
-  
+
+
     #Random number to choose either category
     category = rand(1..2)
     if category == 1
@@ -83,7 +83,7 @@ def title
     elsif category == 2
         category = :object
     end
-  
+
     #This prints a message if any key pressed other than a letter or exit [3]
     unless $words_hash.key?(letter)
         puts "no match"

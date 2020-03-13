@@ -1,20 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    ascii-image (0.1.5)
-      rainbow (~> 3.0, >= 3.0.0)
-      rmagick (~> 2.16, >= 2.16.0)
     colorize (0.8.1)
-    rainbow (3.0.0)
-    rmagick (2.16.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  ascii-image (~> 0.1.5)
   colorize (~> 0.8.1)
-  rmagick
 
 BUNDLED WITH
    2.1.4
