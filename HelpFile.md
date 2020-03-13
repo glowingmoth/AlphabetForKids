@@ -2,7 +2,7 @@
 
 1. Download current repository
 
-2. Run AlphabetForKids.rb
+2. Run ./play.sh
 
 3. User will be presented with menu screen containing the  following options
 - **Sight Words** [Press 1 & hit Enter]
