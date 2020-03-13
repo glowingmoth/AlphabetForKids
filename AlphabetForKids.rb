@@ -124,7 +124,7 @@ while true
             system('clear')
             puts ""
             puts ""
-            puts "(Press 3 to Exit)                                          Press a letter to begin! "
+            puts "(Press 3 to Exit)                               Press a letter to begin! "
             #Get key press without having to press enter key after
             begin
                 system('stty raw -echo') #This terminal/system command wil
