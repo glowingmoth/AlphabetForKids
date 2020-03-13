@@ -1,10 +1,12 @@
 # Instructions - Alphabet for Kids
 
 1. Download current repository
+2. Install Ruby.
+https://www.ruby-lang.org/en/downloads/
 
-2. Run ./play.sh
+3. In the terminal type: ./play.sh and hit Enter.
 
-3. User will be presented with menu screen containing the  following options
+4. User will be presented with menu screen containing the  following options
 - **Sight Words** [Press 1 & hit Enter]
 - **Missing Letter** [Press 2 & hit Enter]
 - **Exit** [Press 3 & hit Enter]

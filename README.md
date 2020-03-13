@@ -24,8 +24,9 @@ Being a father of two young children  I'm aware that early education is vital fo
 - **Errors** will be handled in a simplified way from the child's perspective, however still informing a parent of the wrong key or letter being pressed. The app will simply ignore any keys pressed that are not letters or numbers in the case of the main menu loop.
 
 ### R9 - **Implementation Plan**
+https://github.com/glowingmoth/AlphabetForKids/blob/master/docs/ControlFlow_AlphabetKids.png
 - With the idea in mind I needed to get a clear image of the program logic and so created a flow chart to flesh out any unforeseen issues. This proved to be very useful as I actually recognized several issue immediately once I could see them. The flowchart proved invaluable through the early to mid stages of development.
-![Trello_1](/docs/trello)
+https://github.com/glowingmoth/AlphabetForKids/blob/master/docs/Trello_7.png
 - Having never used any project management system such as Agile and Trello there was some learning and experience to gain. But I can really see the benefit now. My use in the future, now that I have some experience, will be to add more check lists, as I wasn't aware of them and kept creating new cards instead of adding a check list to what was already there.
 
 - From this point , with my limited understanding or perhaps brain jammed full of information from the past to weeks of the bootcamp I decided to go with a hash to store the alphabet, words and categories as I still lacked in understand all the features of using classes and inheritance. 
