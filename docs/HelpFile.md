@@ -19,3 +19,10 @@ https://www.ruby-lang.org/en/downloads/
 
 6. If the parent presses **[3]** and **[Enter]** they will exit the program.
 
+## Known Issues:
+
+There is an issue with the key presses when in the sight words or missing letter modes.
+
+holding the key down or pressing it before the ascii art disappears will cause the app to work through every key press, causing a back log.
+
+The work around/temp fix If you don't want to wait for each press to be executed is to press ctrl + c. This will exit the app, then you can ./play.sh to run it again.
